@@ -1,5 +1,5 @@
 {
-    "name": "tecksolke/note",
+    "name": "knox/note",
     "description": "This is a custom system notification channel.",
     "type": "library",
     "license": "MIT",
@@ -16,8 +16,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "webpatser/laravel-uuid": "^3.0",
-        "dev-techguy/laravel-multiple-guards": "^1.0"
+        "ramsey/uuid": "^1.0|^2.0|^3.0|^4.0",
+        "knox/laravel-multiple-guards": "dev-master"
     },
     "autoload": {
         "psr-4": {
