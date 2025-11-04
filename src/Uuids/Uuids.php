@@ -2,7 +2,7 @@
 
 namespace Note\Uuids;
 
-use Webpatser\Uuid\Uuid;
+use Ramsey\Uuid\Uuid;
 
 trait Uuids
 {
@@ -14,7 +14,7 @@ trait Uuids
         parent::boot();
 
         static::creating(function ($model) {
-            $model->{$model->getKeyName()} = Uuid::generate()->string;
+            $model->{$model->getKeyName()} = Uuid::uuid4()->toString();
         });
     }
 }
